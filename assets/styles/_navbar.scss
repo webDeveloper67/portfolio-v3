@@ -1,0 +1,111 @@
+header {
+	position: relative;
+	z-index: 99;
+}
+//header.navbar-sticky-on {
+//  position: fixed;
+//  z-index: 9999;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  background-color: #ffffff;
+//  -webkit-animation: fadeInDown .5s;
+//  animation: fadeInDown .5s;
+//  width: 100%;
+//  box-shadow: 0px 0px 40px rgba(83, 88, 93, 0.2);
+//}
+.navbar-sticky {
+	position: -webkit-sticky;
+}
+.navbar-sticky.sticky {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: -100px;
+	-webkit-transform: translateY(100px);
+	-ms-transform: translateY(100px);
+	transform: translateY(100px);
+	z-index: 1030;
+	border-top: 0;
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	box-shadow: 0px 0px 40px rgba(83, 88, 93, 0.2);
+	background-color: $white;
+}
+@media (prefers-reduced-motion: reduce) {
+	.navbar-sticky.sticky {
+		-webkit-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
+}
+
+// Navbar Brand
+// --------------------------------------------------
+.navbar-brand {
+	width: $navbar-brand-width;
+	color: $headings-color;
+	text-decoration: none;
+}
+
+// Navbar Nav
+// --------------------------------------------------
+.navbar-nav {
+	margin: 0;
+	padding: 0;
+
+	.nav-link {
+		height: $btn-height;
+		padding: 0 .9375rem;
+		transition: color .3s;
+		color: $nav-link-color;
+
+		font: {
+			size: ($font-size-base * .8125);
+			weight: $nav-link-font-weight;
+		}
+
+		letter-spacing: $nav-link-letter-spacing;
+		line-height: $btn-height;
+
+		text: {
+			transform: $nav-link-text-transform;
+			decoration: none;
+		}
+	}
+
+	.nav-item {
+		margin: 0;
+
+		&.active {
+			.nav-link {
+				color: $nav-link-activer-color;
+			}
+		}
+	}
+}
+
+@media (max-width: 991.98px) {
+	.navbar-collapse {
+		overflow-y: scroll;
+		max-height: 350px;
+		box-shadow: 0px 10px 30px rgba(83, 88, 93, 0.2);
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 100%;
+		background: #ffffff;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	.navbar {
+		padding: 0.5rem 1rem;
+	}
+
+	.nav-item {
+		padding: 0px 30px;
+	}
+}
+// .navbar .navbar-toggler-icon {
+// 	background-image: url('../assets/hamburger1.svg');
+// }
