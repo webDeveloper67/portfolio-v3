@@ -1,0 +1,84 @@
+// Font families
+.font-family-body {
+	font-family: $font-family-base !important;
+}
+.font-family-heading {
+	font-family: $headings-font-family !important;
+}
+
+// Text decorations
+.text-crossed {
+	text-decoration: line-through !important;
+}
+.text-shadow {
+	text-shadow: 0 1px rgba($black, .5) !important;
+}
+.text-decoration-none {
+	text-decoration: none !important;
+}
+
+// Gradient background
+.bg-gradient {
+	@include gradient-background($gradient-color-1, $gradient-color-2);
+}
+.bg-gradient-vertical {
+	@include gradient-background-vertical($gradient-color-1, $gradient-color-2);
+}
+
+// Spacing
+
+.slice {
+	position: relative;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.slice-xl {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+.slice-lg {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+
+.slice-sm {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+// Type Class Utilities
+// Predefined text sizes
+.lead {
+	font-size: $lead-font-size !important;
+}
+.text-xl {
+	font-size: $font-size-xl !important;
+}
+.text-lg {
+	font-size: $font-size-lg !important;
+}
+.text-md {
+	font-size: $font-size-md !important;
+}
+.text-sm {
+	font-size: $font-size-sm !important;
+}
+.text-xs {
+	font-size: $font-size-xs !important;
+}
+
+// Positioning
+.top-0 {
+	top: 0;
+}
+.bottom-0 {
+	bottom: 0;
+}
+.left-0 {
+	left: 0;
+}
+.right-0 {
+	right: 0;
+}

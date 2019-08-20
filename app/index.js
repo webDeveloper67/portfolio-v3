@@ -13,3 +13,5 @@ import 'jquery';
 window.$ = $;
 import 'bootstrap';
 import '@fancyapps/fancybox/dist/jquery.fancybox.js';
+import './app';
+import './parallax';

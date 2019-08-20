@@ -1,7 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 
+@import "./mixins";
+@import "./utilities";
 @import "./variables";
 @import "./navbar";
+@import "./dropdown";
+@import "./s-button";
+@import "./buttons";
 
 // Font Awesome Scss
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";

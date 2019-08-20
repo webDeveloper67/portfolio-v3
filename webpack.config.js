@@ -72,6 +72,7 @@ module.exports = {
 						loader: 'sass-loader',
 						options: {
 							sourceMap: IS_DEV,
+							data: '@import "./assets/styles/variables";',
 							includePaths: [dirAssets]
 						}
 					}
