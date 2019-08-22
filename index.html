@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Webpack Boilerplate</title>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display:none">
+        <symbol id="search" viewBox="0 0 485.213 485.213">
+            <path fill="currentColor"
+                d="M363.909 181.955C363.909 81.473 282.44 0 181.956 0 81.474 0 .001 81.473.001 181.955s81.473 181.951 181.955 181.951c100.484 0 181.953-81.469 181.953-181.951zM181.956 318.416c-75.252 0-136.465-61.208-136.465-136.46 0-75.252 61.213-136.465 136.465-136.465 75.25 0 136.468 61.213 136.468 136.465 0 75.252-61.218 136.46-136.468 136.46zM471.882 407.567L360.567 296.243a214.267 214.267 0 0 1-64.331 64.321L407.56 471.888c17.772 17.768 46.587 17.768 64.321 0 17.773-17.739 17.773-46.554.001-64.321z" />
+        </symbol>
+        <symbol id="full-screen" viewBox="0 0 502.664 502.664">
+            <path
+                d="M390.927 344.744v55.221h-29.573l72.111 72.09-26.748 26.834h95.947v-96.012l-26.813 26.791zM406.717 3.775l26.748 26.812-72.068 72.068h29.53v55.265l84.924-84.903 26.813 26.791V3.775zM111.672 399.965v-55.134l-84.86 84.816L0 402.877v96.012h95.947l-26.748-26.834 72.111-72.09zM111.672 157.855v-55.2h29.595L69.199 30.587 95.947 3.775H0v96.011l26.812-26.79zM143.877 136.888h214.867v228.78H143.877z" />
+        </symbol>
+    </svg>
+    <header class="header-static navbar-sticky">
+        <!-- Logo Nav Start -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    uitocode
+                </a>
+                <!-- Menu opener button -->
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Main Menu Start -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Menu item 1 Demos-->
+                        <li class="nav-item dropdown dropdown-animate">
+                            <a class="nav-link" href="#" id="demosMenu" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Demos</a>
+                            <div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="demosMenu">
+                                <div class="d-block d-sm-flex">
+                                    <ul class="list-unstyled w-100 w-sm-50 pr-0 pr-lg-5">
+                                        <li
+                                            class="dropdown-header font-weight-medium text-primary border-warning text-uppercase">
+                                            <i class="fas fa-gem"></i>&nbsp;&nbsp;Business homepage</li>
+                                        <li> <a class="dropdown-item" href="index.html">Classic Default</a> </li>
+                                        <li> <a class="dropdown-item" href="index-2.html">Corporate Start-Up</a> </li>
+                                        <li> <a class="dropdown-item" href="index-3.html">Landing Trendy</a> </li>
+                                        <li> <a class="dropdown-item" href="index-4.html">Portfolio Modern</a> </li>
+                                        <li> <a class="dropdown-item" href="index-5.html">Agency Start-Up</a> </li>
+                                    </ul>
+                                    <ul class="list-unstyled w-100 w-sm-50 pr-0 pr-lg-5">
+                                        <li
+                                            class="dropdown-header font-weight-medium text-accent border-warning text-uppercase">
+                                            <i class="fas fa-briefcase"></i>&nbsp;&nbsp;Classic homepage</li>
+                                        <li> <a class="dropdown-item" href="index-6.html">Classic Corporate</a> </li>
+                                        <li> <a class="dropdown-item" href="index-7.html">Creative agency</a> </li>
+                                        <li> <a class="dropdown-item" href="index-8.html">Home Elegant</a> </li>
+                                        <li> <a class="dropdown-item" href="index-9.html">Marketplace</a> </li>
+                                        <li> <a class="dropdown-item" href="index-10.html">Personal Portfolio</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Menu item 2 Blog-->
+                        <li class="nav-item dropdown dropdown-animate">
+                            <a class="nav-link" href="#" id="blogMenu" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu" aria-labelledby="blogMenu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Blog default
+                                        <svg class="icon opacity-20" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.4444 8.41358C14.7776 8.2281 15.1875 8.46907 15.1875 8.85048V15.1495C15.1875 15.5309 14.7776 15.7719 14.4444 15.5864L8.78505 12.4369C8.44258 12.2463 8.44258 11.7537 8.78505 11.5631L14.4444 8.41358Z"
+                                                fill="#212529"></path>
+                                        </svg>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a class="dropdown-item" href="blog-classic.html">Full Width</a> </li>
+                                        <li> <a class="dropdown-item" href="blog-classic-left-sidebar.html">Left
+                                                Sidebar</a> </li>
+                                        <li> <a class="dropdown-item" href="blog-classic-right-sidebar.html">Right
+                                                Sidebar</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Blog Grid</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a class="dropdown-item" href="blog-grid-column-3.html">Three column</a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="blog-grid-column-4.html">Four column</a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="blog-grid-left-sidebar.html">Left
+                                                Sidebar</a> </li>
+                                        <li> <a class="dropdown-item" href="blog-grid-right-sidebar.html">Right
+                                                Sidebar</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Blog Single</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a class="dropdown-item" href="blog-single-classic.html">Single classic</a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="blog-single-minimal.html">Single Minimal</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Menu item 3 Pages-->
+                        <li class="nav-item dropdown dropdown-animate">
+                            <a class="nav-link" href="#" id="pagesMenu" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu" aria-labelledby="pagesMenu">
+                                <li> <a class="dropdown-item" href="about-classic.html">About Classic</a></li>
+                                <li> <a class="dropdown-item" href="about-advance.html">About Advance</a> </li>
+                                <li> <a class="dropdown-item" href="service.html">Service</a> </li>
+                                <li> <a class="dropdown-item" href="contact.html">Contact</a> </li>
+                                <li> <a class="dropdown-item" href="team.html">Team</a> </li>
+                                <li> <a class="dropdown-item" href="careers.html">Careers</a> </li>
+                                <li> <a class="dropdown-item" href="careers-single.html">Careers single</a> </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Login &amp; Signup</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a class="dropdown-item" href="sign-in.html">Sign in</a> </li>
+                                        <li> <a class="dropdown-item" href="sign-up.html">Sign up</a> </li>
+                                        <li> <a class="dropdown-item" href="password-recovery.html">Password
+                                                recovery</a> </li>
+                                    </ul>
+                                </li>
+                                <li> <a class="dropdown-item" href="pricing.html">Pricing</a> </li>
+                                <li> <a class="dropdown-item" href="timeline.html">Timeline</a> </li>
+                                <li> <a class="dropdown-item" href="faq.html">FAQs</a> </li>
+                                <li> <a class="dropdown-item" href="maintenance-mode.html">Maintenance mode</a> </li>
+                                <li> <a class="dropdown-item" href="error-404.html">Error 404</a> </li>
+                            </ul>
+                        </li>
+                        <!-- Menu item 4 Portfolio-->
+                        <li class="nav-item dropdown dropdown-animate">
+                            <a class="nav-link" href="#" id="portfolioMenu" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Portfolio</a>
+                            <ul class="dropdown-menu" aria-labelledby="portfolioMenu">
+                                <li> <a class="dropdown-item" href="portfolio-grid-column-3.html">Portfolio Column 3</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="portfolio-grid-column-4.html">Portfolio Column 4</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="portfolio-grid-column-5.html">Portfolio Column 5</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="portfolio-grid-column-6.html">Portfolio Column 6</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="portfolio-single.html">Portfolio Single</a> </li>
+                                <li> <a class="dropdown-item" href="portfolio-single-02.html">Portfolio Single 2</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="portfolio-case-studies.html">Portfolio case studies
+                                        <span class="badge badge-success ml-2">Hot</span></a> </li>
+                            </ul>
+                        </li>
+                        <!-- Menu item 5 Elements-->
+                        <li class="nav-item dropdown megamenu">
+                            <a class="nav-link" href="#" id="elementsMenu" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Elements</a>
+                            <div class="dropdown-menu" aria-labelledby="elementsMenu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li> <a class="dropdown-item"
+                                                        href="elements-accordion.html">Accordion</a> </li>
+                                                <li> <a class="dropdown-item" href="elements-action-box.html">Action
+                                                        box</a> </li>
+                                                <li> <a class="dropdown-item" href="elements-alerts.html">Alerts</a>
+                                                </li>
+                                                <li> <a class="dropdown-item"
+                                                        href="elements-animated-headlines.html">Animated Headlines</a>
+                                                </li>
+                                                <li> <a class="dropdown-item"
+                                                        href="elements-blockquote.html">Blockquote</a> </li>
+                                                <li> <a class="dropdown-item" href="elements-buttons.html">Buttons</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li> <a class="dropdown-item" href="elements-clients.html">Clients</a>
+                                                </li>
+                                                <li> <a class="dropdown-item" href="elements-counter.html">Counter</a>
+                                                </li>
+                                                <li> <a class="dropdown-item" href="elements-divider.html">Divider</a>
+                                                </li>
+                                                <li> <a class="dropdown-item" href="elements-feature-box.html">Feature
+                                                        box</a> </li>
+                                                <li> <a class="dropdown-item" href="elements-forms.html">Forms</a> </li>
+                                                <li> <a class="dropdown-item" href="elements-grid.html">Grid</a> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li> <a class="dropdown-item" href="elements-list-styles.html">list
+                                                        styles</a> </li>
+                                                <li> <a class="dropdown-item" href="elements-map.html">Map</a> </li>
+                                                <li> <a class="dropdown-item" href="elements-modal.html">Modal</a> </li>
+                                                <li> <a class="dropdown-item" href="elements-skill.html">skill</a> </li>
+                                                <li> <a class="dropdown-item" href="elements-social-icon.html">social
+                                                        icon</a> </li>
+                                                <li> <a class="dropdown-item" href="elements-tab.html">Tab</a> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li> <a class="dropdown-item" href="elements-table.html">Table</a> </li>
+                                                <li> <a class="dropdown-item" href="elements-team.html">Team</a> </li>
+                                                <li> <a class="dropdown-item"
+                                                        href="elements-typography.html">Typography</a> </li>
+                                                <li> <a class="dropdown-item" href="elements-video.html">Video</a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Menu item 6 Docs-->
+                    </ul>
+                </div>
+                <div class="navbar-nav">
+                    <!-- extra item Search-->
+                    <div class="nav-item border-0 pl-3 pr-0 px-lg-2">
+                        <a href="#" class="nav-link" data-action="omnisearch-open" data-target="#omnisearch">
+                            <svg class="icon icon-md" width="24px" height="24px">
+                                <use xlink:href="#search"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- extra item Btn-->
+                    <div class="nav-item border-0 d-none d-lg-inline-block align-self-center">
+                        <a href="#" class="btn btn-sm btn-gradient text-white mb-0">Buy Now!</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="p-0 position-relative">
+        <div class="container d-flex w-100 h-100">
+            <div class="row justify-content-between align-items-center w-100">
+                <div class="col-md-5 d-none d-lg-block p-0 ">
+                    <img src="imgs/assets/images/portfolio-image.jpg" alt="">
+                </div>
+                <!--               Parallax Effect-->
+                <div class="col-md-7 offset-lg-1 col-lg-5 mt-5 mt-md-0 mr-auto">
+                    <h6>— Welcome to my Portfolio</h6>
+                    <h5 class="display-4 display-xl-4 font-weight-normal" data-parallax="{&quot;x&quot;: 50}">
+                        UI/UX Designer
+                    </h5>
+                    <p class="h6 text-light-gray mb-4 font-weight-normal">I’ve found a way to get paid for my favorite
+                        hobby, and
+                        do so while following my dream of traveling the world.</p>
+                    <a class="btn btn-gradient mr-4 mb-3 mb-sm-0" href="#">Know more about me!</a>
+                    <div class="pt-4 pt-md-5">
+                        <a class="social-btn sb-detail-eff sb-facebook" href="#" data-parallax="{&quot;y&quot;: -25}">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="social-btn sb-detail-eff sb-dribbble" href="#" data-parallax="{&quot;y&quot;: 25}">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a class="social-btn sb-detail-eff sb-twitter" href="#" data-parallax="{&quot;y&quot;: -25}">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    Filterable Gallery-->
+    <section class="slice slice-lg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="portfolio-card-body">
+                        <a class="portfolio-card-header" href="imgs/assets/images/puring-tea.jpg"
+                            data-fancybox="gallery" data-caption="Caption for single image">
+                            <img src="imgs/assets/images/puring-tea.jpg" alt="" class="img-fluid">
+                        </a>
+                        <div class="portfolio-card-footer">
+                            <h6 class="info-title"><a href="#" title="">Fly in time</a></h6>
+                            <p class="text-sm">Branding, Watch</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="portfolio-card-body">
+                        <a class="portfolio-card-header" href="imgs/assets/images/laptop.jpg"
+                            data-fancybox="gallery" data-caption="Caption for single image">
+                            <img src="imgs/assets/images/laptop.jpg" alt="" class="img-fluid">
+                        </a>
+                        <div class="portfolio-card-footer">
+                            <h6 class="info-title"><a href="#" title="">Fly in time</a></h6>
+                            <p class="text-sm">Branding, Watch</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="portfolio-card-body">
+                        <a class="portfolio-card-header" href="imgs/assets/images/laptop-thumb.jpg"
+                            data-fancybox="gallery" data-caption="Caption for single image">
+                            <img src="imgs/assets/images/laptop-thumb.jpg" alt="" class="img-fluid">
+                        </a>
+                        <div class="portfolio-card-footer">
+                            <h6 class="info-title"><a href="#" title="">Fly in time</a></h6>
+                            <p class="text-sm">Branding, Watch</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="portfolio-card-body">
+                        <a class="portfolio-card-header" href="imgs/assets/images/searching.jpg"
+                            data-fancybox="gallery" data-caption="Caption for single image">
+                            <img src="imgs/assets/images/searching.jpg" alt="" class="img-fluid">
+                        </a>
+                        <div class="portfolio-card-footer">
+                            <h6 class="info-title"><a href="#" title="">Fly in time</a></h6>
+                            <p class="text-sm">Branding, Watch</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="portfolio-card-body">
+                        <a class="portfolio-card-header" href="imgs/assets/images/success.jpg"
+                            data-fancybox="gallery" data-caption="Caption for single image">
+                            <img src="imgs/assets/images/success.jpg" alt="" class="img-fluid">
+                        </a>
+                        <div class="portfolio-card-footer">
+                            <h6 class="info-title"><a href="#" title="">Fly in time</a></h6>
+                            <p class="text-sm">Branding, Watch</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="portfolio-card-body">
+                        <a class="portfolio-card-header" href="imgs/assets/images/talking-man.jpg"
+                            data-fancybox="gallery" data-caption="Caption for single image">
+                            <img src="imgs/assets/images/talking-man.jpg" alt="" class="img-fluid">
+                        </a>
+                        <div class="portfolio-card-footer">
+                            <h6 class="info-title"><a href="#" title="">Fly in time</a></h6>
+                            <p class="text-sm">Branding, Watch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Load more -->
+            <div class="mt-4 text-center">
+                <a href="#" class="tag-link">Load more</a>
+            </div>
+        </div>
+    </section>
+    <section class="has-divider" style="background-color: #f1f6fd">
+        <div class="container">
+            <div class="row align-items-center justify-content-between o-hidden">
+                <div class="col-md-6 order-sm-2 mb-5 mb-sm-0">
+                    <img src="fonts/increasing-viewer.svg" alt="Image">
+                </div>
+                <div class="col-md-6 pr-xl-5 order-sm-1">
+                    <h1 class="h3">Get the latest news</h1>
+                    <p class="lead text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore.</p>
+                    <form>
+                        <div class="input-group px-0">
+                            <input
+                                class="form-control text-muted border-radius-right-0 border-right-0 bg-transparent text-white"
+                                type="text" name="search" placeholder="Enter your email...">
+                            <button type="button" class="btn btn-gradient mb-0 border-radius-left-0">
+                                <span class="d-none d-md-block">Get started now</span>
+                                <span class="d-md-none"><i class="fa fa-paper-plane-o m-0"></i></span>
+                            </button>
+                        </div>
+                    </form>
+                    <span class="text-small text-muted">Already using monill? <a href="#">Sign In</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="divider">
+            <svg width="100%" height="100%" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                <path
+                    d="M0,0 C6.83050094,50 15.1638343,75 25,75 C41.4957514,75 62.4956597,0 81.2456597,0 C93.7456597,0 99.9971065,0 100,0 L100,100 L0,100"
+                    fill="#ffffff"></path>
+            </svg>
+        </div>
+    </section>
+
+    <footer class="footer footer-dark">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer widget 1 -->
+                    <div class="col-md-8 mx-auto">
+                        <div class="widget text-center mt-5">
+                            <a href="http://uitocode.com/" class="footer-logo mb-3 text-white text-decoration-none">
+                                UITOCODE
+                            </a>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dicta non
+                                possimus natus libero deserunt, vitae nam, officia quis. Nisi harum quos asperiores,
+                                quas accusamus.</p>
+                            <!-- contact info -->
+                            <ul class="p-0 list-inline">
+                                <li class="list-inline-item mr-4"><i
+                                        class="mr-1 text-primary fas fa-map-marker-alt"></i></i>1421 NY, Near Park, CO
+                                    64858. </li>
+                                <li class="list-inline-item mr-4"><i class="mr-1 text-primary fas fa-phone"></i></i>
+                                    (222) 888-6666 </li>
+                                <li class="list-inline-item mr-4"><i class="mr-1 text-primary fas fa-envelope"></i> <a
+                                        class="text-decoration-none"
+                                        href="mailto:uitocode@gmail.com">help@uitocode.com</a> </li>
+                            </ul>
+                            <div class="divider-footer my-3"></div>
+                            <!-- copyright text -->
+                            <div class="copyright-text">©2019 All Rights Reserved by <a href="#!"> uitocode.</a></div>
+                        </div>
+                    </div>
+
+                    <!-- Footer widget 4 -->
+                </div>
+            </div>
+        </div>
+    </footer>
+<script type="text/javascript" src="vendor.a51558c3559d6ec5719f.js"></script><script type="text/javascript" src="bundle.053fca88fab5c35cb764.js"></script></body>
+
+</html>
